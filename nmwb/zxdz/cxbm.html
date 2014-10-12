@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>宁码五笔在线打字练习</title>
+
+
+<style>
+
+.container {
+	width: 970px; margin: 2% auto; border: 1px solid #FFF; height: 580px;
+	position: relative; background: #DDD;
+}
+.container .panel {
+	color: #FFF; border: 2px solid #fff; border-radius: 5px; padding: 5px 5px; background: #2864A8; line-height: 36px; height: 36px;
+	vertical-align: middle; 
+}
+
+.container .queryPanel {   font-size: 24px; line-height: 30px; height: 30px; }
+.container .queryPanel input {width: 200px; margin: 0px 10px; border: 1px solid #000; font-size: 18px; padding: 3px 10px; border-radius: 5px;  }
+
+.container .zigen {width: 98%; margin: 20px auto;}
+.container .zigen img{ width: 99%; }
+
+
+</style>
+</head>
+<body>
+
+
+<div class="panel"></div>
+<div class="container">
+	<div class="panel bold queryPanel">
+		查询编码，请输入要查的字
+		<input type="text" class="queryField"  placeholder="按回车查询" ><span class="code"></span> 
+	</div>
+	
+	<div class="zigen"><img src="image/zigen.png"></div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+
+<script type="text/javascript" src="js/dictionary.js"></script>
+<script type="text/javascript" >
+$(document).ready(function() {
+	// 初始化 查询编码的键盘监听事件
+	initQueryFieldAction();
+});
+
+
+
+//初始化 查询编码的键盘监听事件
+function initQueryFieldAction() {
+	$('.queryField').unbind('keydown').bind('keydown', function() {
+		var event = event || window.event;
+		$(this).next('.code').html('');
+		
+		if (event.keyCode == 13) {
+			// 按下回车，查询
+//			console.log('按下回车');
+			
+			var txt = $(this).val();
+			
+			var code = dy[$.trim(txt)];
+			if (code == null) {
+				$(this).next('.code').html('未找到对应的编码');
+			} else {
+				$(this).next('.code').html('编码为：' + code.toUpperCase());
+			}
+		}
+		
+	});
+}
+
+</script>
+</html>

@@ -1,0 +1,123 @@
+
+*{padding:0; margin: 0; font:inherit;}
+.clearfix {
+  *zoom: 1;
+}
+
+input[type="text"] {font-weight: normal;}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+	width: 970px; margin: 2% auto; border: 1px solid #FFF; height: 580px;
+	position: relative; background: #DDD;
+}
+
+.container .panel {
+	color: #FFF; border: 2px solid #fff; border-radius: 5px; padding: 5px 5px; background: #2864A8; line-height: 36px; height: 36px;
+	vertical-align: middle; 
+}
+
+.container  .bold{font-weight: bold;}
+
+.container input {
+	 padding: 5px; font-size: 14px; height: 16px; line-height:17px; position: relative; top: -3px; display: inline-block;
+}
+
+.container .keyboardPanel{ width: 100%; min-height: 260px; margin-left:  -7px; font-size: 16px; border: 1px solid #CCC;
+	box-shadow: 0 0.2em 0.4em rgba(0,0,0,.5); border-radius: 5px; padding: 10px; background: #fff;}
+.container .keyboard li {
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: relative;
+	font-family: arial,"Vrinda";
+	width: 5em;
+	height: 5em;
+	/*line-height: 2.8em;
+	*/background-color: rgba(255,255,255,.8);
+	border-radius: 0.2em;
+	float: left;
+	text-align: left;
+	font-size: 1em;
+	vertical-align: text-top;
+	margin-right: 0.4em;
+	margin-bottom: 0.4em;
+	box-shadow: 0 0.2em 0.4em rgba(0,0,0,.5);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.container .keyboard li.selected{
+	background: rgba(188,188,188,.5);
+	box-shadow: 0 0.25em 0.5em rgba(0,0,0,.5);
+}
+
+.container .keyboard li.right{
+	background: rgba(188,255,188,.5);
+	box-shadow: 0 0.25em 0.5em rgba(0,0,0,.5);
+}
+
+
+
+
+
+.container .keyboard li:hover {
+	background: rgba(249, 249, 249, 0.901961);
+	box-shadow: 0 0.25em 0.5em rgba(0,0,0,.5) ;
+}
+
+
+.container .keyboard li span.key{display: inline-block; line-height: 1.6em; font-size: 1.2em; font-weight: bold; }
+.container .keyboard li span.section1{ color: #E5322D; }
+.container .keyboard li span.section2{ color: #009541; }
+.container .keyboard li span.section3{ color: #009541; }
+.container .keyboard li span.section4{ color: #E82583; }
+.container .keyboard li span.section5{ color: #009ED6; }
+
+.container .keyboard li span.etymon{display: inline-block;  line-height: 1em; padding: 0px; font-size: 1em; }
+.container .keyboard li i.sort{border: 2px solid #3C3; border-radius: 9px; text-align: center; color: #3C3;
+	background: #FFF; width: 16px; height: 16px; font-size: 12px; display: block;
+	position: absolute; top: 5px; right: 5px; display: none;
+}
+
+.userPanel {width: 65%; position: relative; float: left; margin-top: 20px; text-align: center; }
+.container .contentPanel { width: 20%; text-align: center; font-size: 32px; border-color: #2864A8; margin: auto;}
+.container .tooltipPanel {  width: 80%; text-align: left; font-size: 24px;   margin: 5px auto;}
+
+.tooltipPanel .icon {display: inline-block; width: 28px; margin: auto 5px; position: relative; top: 4px; }
+
+.container .inputPanel {  width: 40%; text-align: left; font-size: 20px; margin: 5px auto;}
+.container .inputPanel input {width: 60px; margin: 0px 15px; border: 1px solid #000; text-align: center;}
+.container .inputPanel a.view-result {border: 1px solid #FFF; border-radius: 5px; cursor: pointer; margin-right: 15px; padding: 5px;}
+.container .inputPanel span.result {color: #3F3; }
+
+
+.leftPanel {float: left; width: 12%; min-height: 150px; display: inline-block; padding: 5px 20px;} 
+.rightPanel {float: right; width: 12%; min-height: 150px; display: inline-block; padding: 5px 20px;}
+
+.functionPanel ul li {list-style: none; margin: 15px 5px; display: block; height: 30px; font-size: 14px; cursor: pointer;}
+.functionPanel ul li .panel {line-height: 20px; height: 20px; text-align:center; font-weight: bold;}
+.functionPanel ul li .panel:hover, .functionPanel ul li.selected .panel{ background: #9CF; border-color: #0464A0; color: #0464A0;}
+.functionPanel ul li .panel a {color: white; text-decoration: none;}
+
+.container .queryPanel { width: 60%; text-align: left; font-size: 18px; line-height: 24px; height: 24px; margin-top: 18px; color: #CCC;}
+.container .queryPanel input {width: 100px; margin: 0px 20px; border: 1px solid #000;}
+
+
+

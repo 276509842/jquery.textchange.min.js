@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>宁码五笔在线打字练习</title>
+
+<link href="zxdz.css" type="text/css" rel="stylesheet" >
+
+</head>
+<body>
+
+
+<div class="panel"></div>
+<div class="container">
+	
+	
+	<div class="keyboardPanel clearfix">
+		<ul class="keyboard">
+			<li>
+				<span class="key">A</span>
+				<span class="etymon">王</span>
+				<span class="etymon">旁</span>
+				<span class="etymon">青</span>
+				<span class="etymon">头</span>
+				<span class="etymon">戋</span>
+				<i class="sort"></i>
+			</li>
+			<li class="selected">B</li>
+			<li>C</li>
+			<li>D</li>
+		</ul>
+	</div>
+	
+	<!-- 左下Panel -->
+	<div class="leftPanel functionPanel">
+		<ul>
+			<li id="yiji"><div class="panel">一级简码</div></li>
+			<li id="erji1"><div class="panel">二级简码1</div></li>
+			<li id="erji2"><div class="panel">二级简码2</div></li>
+			<li id="ycbs"><div class="panel">易错笔顺</div></li>
+			<li id="yccz"><div class="panel">易拆错字</div></li>
+		</ul>
+	</div>
+	
+	<!-- 用户操作Panel -->
+	<div class="userPanel">
+		<div class="panel bold contentPanel">困难</div>
+		<div class="panel bold tooltipPanel"><img class="icon" src="image/info.png"><span class="info">对了，您真棒！请继续……</span></div>
+		<div class="panel bold inputPanel">
+			请输入汉字<input type="text" class="inputField" >
+			<!--<a class="view-result">查看答案</a><span class="result"></span>
+		-->
+		</div>
+		<!--<div class="panel bold queryPanel">查询编码<input type="text" class="queryField"  placeholder="按回车查询" ><span class="code"></span> </div>
+		-->
+	</div>
+	
+	<!-- 右下Panel -->
+	<div class="rightPanel functionPanel">
+		<ul>
+			<li id="cy1"><div class="panel">常用一</div></li>
+			<li id="cy2" ><div class="panel">常用二</div></li>
+			<li id="cy3" ><div class="panel">常用三</div></li>
+			<li id="yczg" ><div class="panel">隐藏字根</div></li>
+			<li id="cxbm" ><div class="panel"><a href="cxbm.html" target="_blank">查询编码</a></div></li>
+		</ul>
+	</div>
+	
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.textchange.min.js"></script>
+
+<script type="text/javascript" src="js/dictionary.js"></script>
+<script type="text/javascript" src="js/zxdz.js"></script>
+</html>
